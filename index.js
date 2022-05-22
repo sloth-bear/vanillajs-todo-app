@@ -23,6 +23,7 @@ window.addEventListener('load', () => {
 
     drawTodoList();
     activateTodoList();
+    setWeather();
 });
 
 loginForm.addEventListener('submit', e => {
@@ -34,4 +35,5 @@ loginForm.addEventListener('submit', e => {
 
     drawTodoList();
     activateTodoList();
+    setWeather();
 });

@@ -29,10 +29,7 @@ function setWeather() {
 
             drawWeather(name, weather[0] && weather[0].main);
         } catch (error) {
-            console.log(error);
             console.error('날씨 정보를 정상적으로 불러오지 못했습니다.');
         }
     })
 }
-
-setWeather();
