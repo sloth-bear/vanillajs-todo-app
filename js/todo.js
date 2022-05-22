@@ -9,9 +9,8 @@ function saveTodoList(todoList = []) {
     localStorage.setItem('todo', JSON.stringify(todoList));
 }
 
-function saveTodo(content) {
+function saveTodo(todo) {
     const todoList = fetchTodoList();
-    const todo = { id: Date.now(), content }
     saveTodoList([...todoList, todo]);
 }
 
@@ -56,12 +55,13 @@ function drawTodoList() {
 
 function handleTodoSubmit() {
     const input = document.getElementById('todoInput');
-    const value = input.value;
-    saveTodo(value);
+
+    const todo = { id: Date.now(), content: input.value };
+    
+    saveTodo(todo);
+    drawTodo(todo);
 
     input.value = "";
-
-    drawTodoList();
 }
 
 todoForm.addEventListener('submit', e => {
