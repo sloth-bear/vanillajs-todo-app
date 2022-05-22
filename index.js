@@ -2,7 +2,7 @@ const images = ['1.jpg', '2.jpg', '3.jpg'];
 
 function setBackgroundImage() {
     const randomIndex = Math.floor(Math.random() * images.length);
-    const randomImage = `./img/${images[randomIndex]}`;
+    const randomImage = `img/${images[randomIndex]}`;
     
     const container = document.querySelector(".container");
     container.style.backgroundImage = `url(${randomImage})`;
