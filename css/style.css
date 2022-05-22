@@ -79,8 +79,20 @@ button:hover {
 
 .container .greeting {
     width:100%;
-    padding: 30px 0px 50px 0px;
-    font-size: 40px;
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+}
+
+.container .weather {
+    padding: 0px 0px 30px 0px;
+}
+
+.container .weather span {
+    font-size: 24px;
+}
+
+.container .weather span:first-of-type:after {
+    content: " is ";
 }
 
 .container .todo .message {
