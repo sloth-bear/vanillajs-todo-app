@@ -1,5 +1,6 @@
-const loginBox = document.querySelector('.login-form');
+const loginBox = document.getElementById('login');
 const loginForm = document.getElementById('loginForm');
+
 const greetingBox = document.querySelector('.greeting');
 
 function fetchUserName() {

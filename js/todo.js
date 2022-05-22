@@ -27,8 +27,8 @@ function handleDeleteTodo(e) {
 }
 
 function drawTodo(todo) {
-    const span = document.createElement('span');
-    span.innerText = todo.content;
+    const p = document.createElement('p');
+    p.innerText = todo.content;
 
     const button = document.createElement('button');
     button.dataset.id = todo.id;
@@ -37,7 +37,7 @@ function drawTodo(todo) {
 
     const li = document.createElement('li');
     li.id = todo.id;
-    li.appendChild(span);
+    li.appendChild(p);
     li.appendChild(button);
     
     const todoList = document.getElementById('todoList');

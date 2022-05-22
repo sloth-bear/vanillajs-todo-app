@@ -8,28 +8,29 @@
     <title>TODO</title>
 </head>
 <body>
-    <div class="clock"></div>
+    <div class="container">
+        <div class="greeting hidden"></div> 
 
-    <div class="greeting hidden"></div>
+        <div class="clock"></div>
 
-    <div class="login-form hidden">
-        <h1 class="message">Hello, What's your name?</h1>
-        <form id="loginForm">
-            <input id="userName" placeholder="로그인하실 이름을 입력하세요" required />
-        </form>
+        <div id="login" class="hidden">
+            <h1 class="message">Hello, What's your name?</h1>
+
+            <form id="loginForm">
+                <input id="userName" placeholder="Type your name and press enter." required maxlength="20" />
+            </form>
+        </div>
+
+        <div class="todo hidden">
+            <h1 class="message">What's the plan for today?</h1>
+
+            <form id="todoForm">
+                <input id="todoInput" placeholder="Type what you want to do and press enter." required />
+            </form>
+
+            <ul id="todoList"></ul>
+        </div>
     </div>
-
-    <div class="todo hidden">
-        <h1 class="message">What's the plan for today?</h1>
-
-        <form id="todoForm">
-            <input id="todoInput" placeholder="항목을 입력하세요" required />
-        </form>
-
-        <ul id="todoList"></ul>
-    </div>
-    <!-- 랜덤 배경 이미지 -->
-    <!-- 날씨와 위치 -->
     
     <script src="./js/login.js"></script>
     <script src="./js/clock.js"></script>
