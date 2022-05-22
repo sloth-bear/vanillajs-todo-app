@@ -8,22 +8,32 @@
     <title>TODO</title>
 </head>
 <body>
-    <div>
-        <h1 id="greeting"></h1>
-        <p id="clock"></p>
-    </div>
-    <div>
-        <form id="loginForm" class="hidden">
+    <div class="clock"></div>
+
+    <div class="greeting hidden"></div>
+
+    <div class="login-form hidden">
+        <h1 class="message">Hello, What's your name?</h1>
+        <form id="loginForm">
             <input id="userName" placeholder="로그인하실 이름을 입력하세요" required />
         </form>
     </div>
-    <div>
-    <!-- 실시간 시계 -->
-    <!-- 로컬 스토리지를 사용한 투두리스트 -->
+
+    <div class="todo hidden">
+        <h1 class="message">What's the plan for today?</h1>
+        
+        <form id="todoForm">
+            <input id="todoInput" placeholder="항목을 입력하세요" required />
+        </form>
+
+        <ul id="todoList"></ul>
+    </div>
     <!-- 랜덤 배경 이미지 -->
     <!-- 날씨와 위치 -->
-
-    <script src="./src/login.js"></script>
-    <script src="./src/clock.js"></script>
+    
+    <script src="./script/login.js"></script>
+    <script src="./script/clock.js"></script>
+    <script src="./script/todo.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
