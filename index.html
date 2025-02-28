@@ -32,6 +32,10 @@
 
             <ul id="todoList"></ul>
         </div>
+
+        <div>
+            <button id="closeButton">Close</button>
+        </div>
     </div>
     
     <script src="js/login.js"></script>
@@ -39,5 +43,12 @@
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
     <script src="index.js"></script>
+
+    <script>
+        const closeButton = document.getElementById("closeButton");
+        closeButton.addEventListener("click", () => {
+            window.close();
+        });
+    </script>
 </body>
 </html>
