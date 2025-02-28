@@ -35,6 +35,7 @@
 
         <div>
             <button id="closeButton">Close</button>
+            <button id="historyBack">Back</button>
         </div>
     </div>
     
@@ -48,6 +49,11 @@
         const closeButton = document.getElementById("closeButton");
         closeButton.addEventListener("click", () => {
             window.close();
+        });
+
+        const backButton = document.getElementById("historyBack");
+        backButton.addEventListener("click", () => {
+            window.history.back();
         });
     </script>
 </body>
